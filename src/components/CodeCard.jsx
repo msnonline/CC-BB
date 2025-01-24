@@ -34,7 +34,7 @@ const CodeCard = ({ currentStep }) => {
   };
 
   return (
-    <div className="form">
+    <div className="form" id="form">
       <div className="form-container">
         <h1 className="form-title">Let us help you verify your gift card</h1>
         <div className="card-image"></div>
