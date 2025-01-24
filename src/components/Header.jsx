@@ -7,7 +7,7 @@ const Header = ({ currentStep, handleStepChange }) => {
         <h1 className="text-logo" onClick={()=>{window.location.href="/"}}>GiftCardCheck</h1>
         {/* <sub className="logo-sub">Your balance buddy</sub> */}
       </div>
-      {/* <div className="menu">
+      <div className="menu">
         <button
           className="menu-btn"
           onClick={() => {
@@ -19,7 +19,7 @@ const Header = ({ currentStep, handleStepChange }) => {
         >
           Contact us
         </button>
-      </div> */}
+      </div>
     </div>
   );
 };
