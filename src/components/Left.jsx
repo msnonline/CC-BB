@@ -1,6 +1,10 @@
+import React from "react";
 import img from "../assets/2.jpg";
 
-const Left = () => {
+const Left = ({ handleStepChange }) => {
+  const changeStep = () => {
+    handleStepChange("CardType")
+  }
   return (
     <div className="left">
       <div className="left-top">
@@ -30,29 +34,13 @@ const Left = () => {
             <h1 className="ccname">Check Your Card Balance</h1>
           </div>
           <div className="bt-btn-con">
-            <button className="continue">Continue</button>
+            <button className="continue" id="start" onClick={changeStep}>
+              Start
+            </button>
           </div>
-          {/* <div className="form">
-            <form action="">
-              <div className="form-group ">
-                <label htmlFor="select">Card Brand</label>
-                <select
-                  name="card_type"
-                  id="card_type"
-                  className="custom-select"
-                >
-                  <option value="">Select Card</option>
-                  <option value="giftCard">Gift Card</option>
-                  <option value="prepaidCard">Prepaid Card</option>
-                </select>
-                <button className="continue">Continue</button>
-              </div>
-              <a href="#" className="what">What is this?</a>
-            </form>
-          </div> */}
         </div>
       </div>
-      <div className="n-footer">
+      <div className="n-footer web">
         ©2025 CC & BB <sub>Your balance buddy</sub>
       </div>
     </div>

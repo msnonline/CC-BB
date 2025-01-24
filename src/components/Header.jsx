@@ -1,6 +1,6 @@
 import Menu from "../assets/menu.png";
 
-const Header = () => {
+const Header = ({currentStep,handleStepChange}) => {
   return (
     <div className="header">
       <div className="logo">
@@ -8,8 +8,9 @@ const Header = () => {
         {/* <sub className="logo-sub">Your balance buddy</sub> */}
       </div>
       <div className="menu">
-        <button className="menu-btn">
-          <img src={Menu} alt="" />
+        <button className="menu-btn" onClick={()=>{handleStepChange("Contact");}}>
+          {/* <img src={Menu} alt="" /> */}
+          Contact us
         </button>
       </div>
     </div>
