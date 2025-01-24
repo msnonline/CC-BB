@@ -1,4 +1,23 @@
+import { useState, useEffect } from "react";
+
 const Result = () => {
+  const [lastFour, setLastFour] = useState("");
+  const [retreiveLocal, setRetreiveLocal] = useState(null);
+
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("GiftCardEntries"));
+    setRetreiveLocal(data);
+  }, []);
+
+  useEffect(() => {
+    if (retreiveLocal) {
+      if (retreiveLocal["Card Number"]) {
+        setLastFour(retreiveLocal["Card Number"].slice(-4));
+      } else if (retreiveLocal["Card Code"]) {
+        setLastFour(retreiveLocal["Card Code"].slice(-4));
+      }
+    }
+  }, [retreiveLocal]);
   return (
     <div className="form">
       <div className="form-container">
@@ -25,45 +44,55 @@ const Result = () => {
           <h1 className="status">Activated</h1>
           <div className="table-container">
             <table className="table">
-              {/* <thead>
-                <tr>
-                  <th>Column 1</th>
-                  <th>Column 2</th>
-                </tr>
-              </thead> */}
               <tbody>
                 <tr>
-                  <td>Card Type</td>
-                  <td>Steam Wallet Gift Card</td>
+                  <td className="tl">Card Type</td>
+                  <td className="tr">{retreiveLocal?.["Card Brand"]}</td>
                 </tr>
                 <tr>
-                  <td>Code</td>
-                  <td>XXX7329</td>
+                  <td className="tl">Card</td>
+                  <td className="tr">{"****" + lastFour}</td>
                 </tr>
                 <tr>
-                  <td>Currency</td>
-                  <td>EUR (€)</td>
+                  <td className="tl">Currency</td>
+                  <td className="tr">{retreiveLocal?.["Currency"]}</td>
                 </tr>
                 <tr>
-                  <td>Refund Policy</td>
-                  <td>Non-refundable once redeemed</td>
+                  <td className="tl">Amount</td>
+                  <td className="tr">{retreiveLocal?.["Amount"]}</td>
                 </tr>
                 <tr>
-                  <td>Purpose</td>
-                  <td>
-                    Used to add funds to a Steam account for purchasing games,
-                    software, or other content on the Steam platform.
+                  <td className="tl">Refund Policy</td>
+                  <td className="tr">Non-refundable once redeemed</td>
+                </tr>
+                <tr>
+                  <td className="tl">
+                    <strong className="valid">Result</strong>
                   </td>
-                </tr>
-                <tr>
-                  <td>Note</td>
-                  <td>
-                    This card can only be redeemed on Amazon.com. Please retain
-                    the card for future reference.
+                  <td className="tr">
+                    <strong className="valid">
+                      The card is active with a balance of{" "}
+                      {retreiveLocal?.["Currency"]} {retreiveLocal?.["Amount"]}{" "}
+                      and ready for use.
+                    </strong>
                   </td>
                 </tr>
               </tbody>
             </table>
+            <br />
+            <button
+              className="continue"
+              onClick={() => {
+                currentStep("CardType");
+              }}
+            >
+              Verify Another Card
+            </button>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
         </div>
       </div>

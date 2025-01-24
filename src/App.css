@@ -229,7 +229,7 @@ input:focus {
   background-color: #255e80;
   color: white;
   font-size: 1.25rem;
-  width: 100%;
+  width: 60%;
   cursor: pointer;
 }
 
@@ -476,6 +476,7 @@ select {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   flex-grow: 1;
   height: auto;
@@ -648,7 +649,61 @@ html {
     display: flex;
     flex-direction: column;
     background-color: #212a33e7;
-    min-height:400px;
+    min-height:500px;
+    background-position: 7px 40% !important;
+  }
+
+  .loader{
+    width: 50px;
+    height: 50px;
+  }
+
+  .loading-status{
+    font-size: 1rem;
+  }
+
+  .no-result{
+    padding: 0 !important;
+  }
+  
+  .tl{
+    padding: 0 !important;
+  }
+
+  .tr{
+    padding-right: 0;
+  }
+
+  .cancel{
+    width: 60px;
+    height: 60px;
+  }
+
+  .status{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3484b3;
+  }
+
+  .nextstep{
+    padding: 0;
+    margin-bottom: .5rem;
+  }
+
+  .ng{
+    color: white;
+  }
+
+  .ng h2{
+    font-size: 1.3rem;
+    color: #368a08;
+  }
+
+  .next-steps{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem 0 !important;
   }
 
   .form {
@@ -710,27 +765,38 @@ html {
     display: flex !important;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+  }
+
+  .menu-btn{
+    width: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .continue{
+    width: 100%;
+  }
+
+  .result-container{
+    align-items: center;
   }
 }
 
-@media screen and (min-width: 630px) and (max-width: 900px) {
-   .ccname {
-    /* padding-left: 2rem !important; */
+.valid{
+  color: #4cbd0f;
+}
+
+@media screen and (min-width: 900px) and (max-width: 900px) {
+   .continue{
+    width: 60%;
+    justify-self: center;
+    align-self: center;
   }
-
-  /* .bt-btn-con {
-    padding: 2rem 2rem 0 0;
-    display: flex;
-    justify-content: flex-end;
-  } */
-
-  /* .form-itself{
-    margin: auto;
-  } */
-
-  /* .bottom-half{
-    padding: 1rem 3rem 1rem 1rem;
-  } */
 }
 
 /* @media screen and (min-width: 761px) and (max-width: 1023px) {
@@ -771,3 +837,24 @@ html {
 .mobile {
   display: none;
 }
+
+.nextstep{
+    padding: 0;
+    margin-bottom: .5rem;
+  }
+
+  .ng{
+    color: white;
+  }
+
+  .ng h2{
+    font-size: 1.3rem;
+    color: #368a08;
+  }
+
+  .next-steps{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
