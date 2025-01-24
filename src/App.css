@@ -196,7 +196,7 @@ strong {
   font-size: 1.6rem;
 }
 
-.ft-box{
+.ft-box {
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -285,6 +285,9 @@ select {
   color: white !important;
   font-size: 1rem;
   width: 100% !important;
+  appearance: none; /* Removes default arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
 }
 
 .suc-head {
@@ -343,7 +346,7 @@ select {
   justify-content: flex-end;
 } */
 
-#start{
+#start {
   width: 150px;
 }
 
@@ -637,77 +640,78 @@ html {
     width: 100%;
   }
 
-  .left-top{
+  .left-top {
     padding: 2rem 1rem;
   }
 
-  .ccname{
+  .ccname {
     padding: 0 !important;
   }
-  .bottom-half{
+  .bottom-half {
     padding: 1rem;
     /* width: 90%;
     margin: auto; */
   }
 
-  .right-content, .form {
+  .right-content,
+  .form {
     flex-grow: 1 !important;
     display: flex;
     flex-direction: column;
     background-attachment: fixed !important;
     background-color: #212a33e7;
-    min-height:500px;
+    min-height: 500px;
     background-position: 7px 70% !important;
     /* background-position: center !important; */
   }
 
-  .loader{
+  .loader {
     width: 50px;
     height: 50px;
   }
 
-  .loading-status{
+  .loading-status {
     font-size: 1rem;
   }
 
-  .no-result{
-    padding: 0 !important;
-  }
-  
-  .tl{
+  .no-result {
     padding: 0 !important;
   }
 
-  .tr{
+  .tl {
+    padding: 0 !important;
+  }
+
+  .tr {
     padding-right: 0;
   }
 
-  .cancel{
+  .cancel {
     width: 60px;
     height: 60px;
   }
 
-  .status{
+  .status {
     font-size: 1.2rem;
     font-weight: 700;
     color: #3484b3;
   }
 
-  .nextstep{
+  .nextstep {
     padding: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
-  .ng{
+  .ng {
     color: white;
   }
 
-  .ng h2{
+  .ng h2 {
     font-size: 1.3rem;
     color: #368a08;
   }
 
-  .next-steps{
+  .next-steps {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -718,14 +722,13 @@ html {
     position: relative;
     /* padding-bottom: 3rem; */
     width: 100%;
-  
   }
 
-  form{
+  form {
     width: 100%;
   }
 
-  .form-container{
+  .form-container {
     background-color: #212a33e7;
     flex-grow: 1;
     padding: 1rem;
@@ -745,11 +748,11 @@ html {
     /* display: none; */
   }
 
-  .ft-box{
+  .ft-box {
     padding: 0 0 1rem;
   }
 
-  .ft-box{
+  .ft-box {
     display: flex;
     justify-content: flex-start;
   }
@@ -787,29 +790,28 @@ html {
     height: 50px;
   }
 
-  .menu-btn{
+  .menu-btn {
     width: 150px;
     text-align: center;
     display: flex;
     justify-content: center;
-    
   }
 
-  .continue{
+  .continue {
     width: 100%;
   }
 
-  .result-container{
+  .result-container {
     align-items: center;
   }
 }
 
-.valid{
+.valid {
   color: #4cbd0f;
 }
 
 @media screen and (min-width: 900px) and (max-width: 900px) {
-   .continue{
+  .continue {
     width: 60%;
     justify-self: center;
     align-self: center;
@@ -855,23 +857,23 @@ html {
   display: none;
 }
 
-.nextstep{
-    padding: 0;
-    margin-bottom: .5rem;
-  }
+.nextstep {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
 
-  .ng{
-    color: white;
-  }
+.ng {
+  color: white;
+}
 
-  .ng h2{
-    font-size: 1.3rem;
-    color: #368a08;
-  }
+.ng h2 {
+  font-size: 1.3rem;
+  color: #368a08;
+}
 
-  .next-steps{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    padding: 1rem;
-  }
+.next-steps {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
+}
