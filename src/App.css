@@ -192,10 +192,15 @@ strong {
 }
 
 .form-title {
-  margin: 0rem 4rem;
-  align-self: flex-start;
   color: #3488b9;
   font-size: 1.6rem;
+}
+
+.ft-box{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 1rem 0 3.7rem;
 }
 
 .cctop {
@@ -732,12 +737,21 @@ html {
   }
 
   .form-title {
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
     /* text-align: center; */
     /* padding: 0 1rem; */
     /* display: block; */
     font-size: 1.3rem;
-    display: none;
+    /* display: none; */
+  }
+
+  .ft-box{
+    padding: 0 0 1rem;
+  }
+
+  .ft-box{
+    display: flex;
+    justify-content: flex-start;
   }
 
   form {

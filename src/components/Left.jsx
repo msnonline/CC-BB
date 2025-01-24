@@ -39,7 +39,7 @@ const Left = ({ handleStepChange }) => {
             changeStep();
             setTimeout(() => {
               window.location.href = "#form";
-            }, 1000);
+            }, 2);
           }}
         >
           Start
