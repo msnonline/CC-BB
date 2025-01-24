@@ -55,8 +55,11 @@ const CodeCard = ({ currentStep }) => {
             Look Up Card
           </button>
         </form>
-        {error && <p className="error">{error}</p>}
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };

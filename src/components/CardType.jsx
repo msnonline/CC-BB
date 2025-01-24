@@ -157,6 +157,7 @@ const CardType = ({ currentStep }) => {
         </form>
         {/* {error && <p className="error">{error}</p>} */}
       </div>
+      <br /><br /><br /><br />
     </div>
   );
 };

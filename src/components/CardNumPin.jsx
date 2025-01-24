@@ -69,6 +69,10 @@ const CardNumPin = ({ currentStep }) => {
           </button>
         </form>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
