@@ -4,7 +4,7 @@ const Header = ({ currentStep, handleStepChange }) => {
   return (
     <div className="header">
       <div className="logo">
-        <h1 className="text-logo">CC & BB</h1>
+        <h1 className="text-logo">GiftCardCheck</h1>
         {/* <sub className="logo-sub">Your balance buddy</sub> */}
       </div>
       <div className="menu">
