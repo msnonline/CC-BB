@@ -113,10 +113,9 @@ body {
 .right-content,
 .form {
   background-image: url("./assets/cards.png");
-  background-position: center;
-  background-size: contain;
+  background-position: center !important;
+  background-size: contain !important;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: auto;
   width: 100%;
   position: relative;
@@ -646,10 +645,11 @@ html {
     margin: auto; */
   }
 
-  .right-content {
+  .right-content, .form {
     flex-grow: 1 !important;
     display: flex;
     flex-direction: column;
+    background-attachment: fixed !important;
     background-color: #212a33e7;
     min-height:500px;
     background-position: 7px 85% !important;
