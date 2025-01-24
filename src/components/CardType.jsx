@@ -143,7 +143,7 @@ const CardType = ({ currentStep }) => {
           <div className="form-group">
             <label htmlFor="currency">Amount</label>
             <input
-              type="text"
+              type="number"
               className="card-field"
               id="amount"
               placeholder="50"

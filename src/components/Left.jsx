@@ -3,8 +3,8 @@ import img from "../assets/2.jpg";
 
 const Left = ({ handleStepChange }) => {
   const changeStep = () => {
-    handleStepChange("CardType")
-  }
+    handleStepChange("CardType");
+  };
   return (
     <div className="left">
       <div className="left-top">
@@ -32,7 +32,16 @@ const Left = ({ handleStepChange }) => {
         <div className="cctop">
           <h1 className="ccname">Check Your Card Balance</h1>
         </div>
-        <button className="continue" id="start" onClick={changeStep}>
+        <button
+          className="continue"
+          id="start"
+          onClick={() => {
+            changeStep();
+            setTimeout(() => {
+              window.location.href = "#form";
+            }, 2);
+          }}
+        >
           Start
         </button>
       </div>

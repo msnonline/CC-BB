@@ -57,7 +57,7 @@ const Contact = ({ currentStep }) => {
   };
 
   return (
-    <div className="form">
+    <div className="form" id="form">
       <div className="form-container">
         <form onSubmit={changeStep}>
           <h1 className="suc-head">Send us a message</h1>

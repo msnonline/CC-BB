@@ -8,7 +8,9 @@ const Header = ({currentStep,handleStepChange}) => {
         {/* <sub className="logo-sub">Your balance buddy</sub> */}
       </div>
       <div className="menu">
-        <button className="menu-btn" onClick={()=>{handleStepChange("Contact");}}>
+        <button className="menu-btn" onClick={()=>{handleStepChange("Contact"); setTimeout(()=>{
+          window.location.href = "#form"
+        },2)}}>
           {/* <img src={Menu} alt="" /> */}
           Contact us
         </button>

@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-weight: 400;
   font-family: "Inter";
+  scroll-behavior: smooth;
 }
 
 .form-container::-webkit-scrollbar {
