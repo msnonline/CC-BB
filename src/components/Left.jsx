@@ -29,16 +29,12 @@ const Left = ({ handleStepChange }) => {
         <sub>Manage your cards with confidence and ease.</sub>
       </div>
       <div className="bottom-half">
-        <div className="right card-type">
-          <div className="cctop">
-            <h1 className="ccname">Check Your Card Balance</h1>
-          </div>
-          <div className="bt-btn-con">
-            <button className="continue" id="start" onClick={changeStep}>
-              Start
-            </button>
-          </div>
+        <div className="cctop">
+          <h1 className="ccname">Check Your Card Balance</h1>
         </div>
+        <button className="continue" id="start" onClick={changeStep}>
+          Start
+        </button>
       </div>
       <div className="n-footer web">
         ©2025 CC & BB <sub>Your balance buddy</sub>

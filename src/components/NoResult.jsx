@@ -110,7 +110,6 @@ const NoResult = ({ currentStep }) => {
           </button>
         </div>
       </div>
-      <br />
     </div>
   );
 };

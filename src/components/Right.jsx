@@ -32,6 +32,7 @@ const Right = ({ currentStep, handleStepChange }) => {
       <div className="n-footer mobile">
         ©2025 CC & BB <sub>Your balance buddy</sub>
       </div>
+      <br />
     </div>
   );
 };
