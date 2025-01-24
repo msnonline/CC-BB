@@ -58,16 +58,22 @@ body {
 }
 
 .menu-btn {
-  background-color: #ffdd00;
+  background-color: #212a33;
   border: none;
   height: 100%;
   width: auto;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 1rem;
   font-size: 1rem;
-  text-shadow: 0 0 1px #333;
-  color: #333;
+  text-shadow: 0 0 1px #3484b3;
+  color: #3484b3;
+  cursor: pointer;
+}
+
+.menu-btn:hover{
+  background-color: #3484b3;
+  color: #ffdd00;
 }
 
 .contact-field {
@@ -626,6 +632,15 @@ html {
   body {
     align-items: flex-start;
   }
+
+  .header{
+    padding-left: 1rem;
+  }
+
+  .menu-btn{
+    padding-right: 0;
+  }
+
   .layout {
     height: auto;
     width: 100%;
