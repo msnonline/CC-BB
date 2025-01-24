@@ -648,6 +648,7 @@ html {
     display: flex;
     flex-direction: column;
     background-color: #212a33e7;
+    min-height:400px;
   }
 
   .form {
