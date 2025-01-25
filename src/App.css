@@ -440,7 +440,7 @@ select {
 
 .result-container {
   width: 100%;
-  background-color: transparent;
+  background-color: whitesmoke;
   padding: 1rem;
   row-gap: 1rem;
   display: flex;
@@ -510,11 +510,12 @@ select {
 
 .no-result {
   /* background-color: #255e80; */
+  padding-top: 0;
 }
 
 .nextstep {
   padding-left: 1.3rem;
-  color: #1cb7e6;
+  color: #333;
 }
 
 .next-table {
@@ -537,6 +538,7 @@ th,
 td {
   padding: 12px 20px;
   border: none;
+  color: #333;
 }
 
 th {
@@ -559,7 +561,8 @@ tr:hover td {
 
 .status {
   font-size: 1.3rem;
-  color: white;
+  color: #3484b3;
+  font-weight: 700;
 }
 
 .loading-status {
@@ -728,8 +731,8 @@ html {
     margin-bottom: 0.5rem;
   }
 
-  .ng {
-    color: white;
+  .ng p {
+    color: #333;
   }
 
   .ng h2 {
@@ -889,7 +892,7 @@ html {
 }
 
 .ng {
-  color: white;
+  color: #333;
 }
 
 .ng h2 {
