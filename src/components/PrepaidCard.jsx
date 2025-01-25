@@ -108,7 +108,7 @@ const PrepaidCard = ({ currentStep }) => {
             <div className="form-group">
               <label htmlFor="exp">Expiry Date</label>
               <input
-                type="number"
+                type="text"
                 className={`card-field exp ${errors.expiryDate ? "error" : ""}`}
                 id="exp"
                 value={expiryDate}
