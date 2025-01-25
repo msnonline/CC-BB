@@ -55,8 +55,7 @@ const NoResult = ({ currentStep }) => {
                   </td>
                   <td className="tr">
                     <strong className="invalid">
-                      This card has not been activated, please contact the
-                      customer support
+                      This card has not been activated, please follow the steps below.
                     </strong>
                   </td>
                 </tr>

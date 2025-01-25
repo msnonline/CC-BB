@@ -272,7 +272,7 @@ option {
 }
 
 .invalid {
-  color: red;
+  color: #333;
 }
 
 form {
