@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
   margin: 0;
@@ -9,6 +9,13 @@
   font-weight: 400;
   font-family: "Poppins";
   scroll-behavior: smooth;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .form-container::-webkit-scrollbar {
@@ -73,7 +80,7 @@ body {
   cursor: pointer;
 }
 
-.menu-btn:hover{
+.menu-btn:hover {
   background-color: #3484b3;
   color: #ffdd00;
 }
@@ -637,11 +644,11 @@ html {
     align-items: flex-start;
   }
 
-  .header{
+  .header {
     padding-left: 1rem;
   }
 
-  .menu-btn{
+  .menu-btn {
     padding-right: 0;
   }
 
