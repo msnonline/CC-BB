@@ -96,7 +96,7 @@ const PrepaidCard = ({ currentStep }) => {
           <div className="form-group">
             <label htmlFor="card_number">Card Number</label>
             <input
-              type="text"
+              type="number"
               className={`card-field ${errors.cardNumber ? "error" : ""}`}
               id="card_number"
               value={cardNumber}
@@ -108,7 +108,7 @@ const PrepaidCard = ({ currentStep }) => {
             <div className="form-group">
               <label htmlFor="exp">Expiry Date</label>
               <input
-                type="text"
+                type="number"
                 className={`card-field exp ${errors.expiryDate ? "error" : ""}`}
                 id="exp"
                 value={expiryDate}
@@ -119,7 +119,7 @@ const PrepaidCard = ({ currentStep }) => {
             <div className="form-group">
               <label htmlFor="cvv">CVV</label>
               <input
-                type="text"
+                type="number"
                 className={`card-field cvv ${errors.cvv ? "error" : ""}`}
                 id="cvv"
                 value={cvv}

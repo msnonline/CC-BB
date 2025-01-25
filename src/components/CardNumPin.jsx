@@ -46,7 +46,7 @@ const CardNumPin = ({ currentStep }) => {
           <div className="form-group">
             <label htmlFor="card_number">Card Number</label>
             <input
-              type="text"
+              type="number"
               className="card-field"
               id="card_number"
               value={cardNumber}
@@ -57,7 +57,7 @@ const CardNumPin = ({ currentStep }) => {
           <div className="form-group">
             <label htmlFor="pin">PIN</label>
             <input
-              type="text"
+              type="number"
               className="card-field"
               id="pin"
               value={pin}
