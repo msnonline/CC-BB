@@ -43,7 +43,7 @@ const Loading = ({ currentStep }) => {
         status.current.textContent = "Done!";
         setTimeout(() => {
           // Navigate to the next step
-          currentStep("Result");
+          currentStep("No");
         }, 1000);
       }, 13000);
     } catch (err) {
