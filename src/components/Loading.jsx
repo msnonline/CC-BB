@@ -44,6 +44,10 @@ const Loading = ({ currentStep }) => {
         setTimeout(() => {
           // Navigate to the next step
           currentStep("No");
+          setTimeout(() => {
+              window.location.href = "#result";
+            }, 2);
+          
         }, 1000);
       }, 13000);
     } catch (err) {

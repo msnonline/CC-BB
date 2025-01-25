@@ -19,7 +19,7 @@ const Result = () => {
     }
   }, [retreiveLocal]);
   return (
-    <div className="form ree">
+    <div className="form ree" id="result">
       <div className="form-container no-result">
         <div className="result-container">
           <svg

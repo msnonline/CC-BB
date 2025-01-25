@@ -21,7 +21,7 @@ const NoResult = ({ currentStep }) => {
   }, [retreiveLocal]);
 
   return (
-    <div className="form">
+    <div className="form" id="result">
       <div className="form-container no-result">
         <div className="result-container nrt">
           <img src={Cancel} alt="" className="cancel" />
