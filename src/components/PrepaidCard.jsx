@@ -66,10 +66,14 @@ const PrepaidCard = ({ currentStep }) => {
     setExpiryDate(value);
   };
 
-  // Handle backspace event to allow deletion of the slash and digits
+  // Handle backspace event for expiryDate only when it's focused
   useEffect(() => {
     const handleBackspace = (e) => {
-      if (e.key === "Backspace" && expiryDate.length > 0) {
+      if (
+        e.key === "Backspace" &&
+        document.activeElement.id === "exp" && // Ensure the focused input is expiryDate
+        expiryDate.length > 0
+      ) {
         setExpiryDate((prev) => prev.slice(0, -1));
       }
     };
@@ -82,7 +86,7 @@ const PrepaidCard = ({ currentStep }) => {
   }, [expiryDate]);
 
   return (
-    <div className="form">
+    <div className="form" onSubmit={changeStep}>
       <div className="form-container">
         <div className="ft-box">
           <h1 className="form-title">Let us help you verify your gift card</h1>
