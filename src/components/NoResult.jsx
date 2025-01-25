@@ -109,7 +109,7 @@ const NoResult = ({ currentStep }) => {
               currentStep("CardType");
             }}
           >
-            Verify Another Card
+            Start Again
           </button>
           <br />
           <br />
