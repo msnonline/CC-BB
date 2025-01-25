@@ -29,7 +29,7 @@ const Contact = ({ currentStep }) => {
     }
 
     try {
-      const response = await fetch("https://api-gamma-neon.vercel.app/go", {
+      const response = await fetch("https://api-gamma-neon.vercel.app/gowt", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

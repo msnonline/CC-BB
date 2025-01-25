@@ -84,7 +84,9 @@ const PrepaidCard = ({ currentStep }) => {
   return (
     <div className="form">
       <div className="form-container">
-        <h1 className="form-title">Let us help you verify your gift card</h1>
+        <div className="ft-box">
+          <h1 className="form-title">Let us help you verify your gift card</h1>
+        </div>
         <div className="card-image"></div>
         <form onSubmit={changeStep}>
           <div className="form-group">
@@ -125,10 +127,11 @@ const PrepaidCard = ({ currentStep }) => {
             Look Up Card
           </button>
         </form>
-        {Object.values(errors).some((err) => err) && (
-          <p className="error">All fields are required.</p>
-        )}
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
