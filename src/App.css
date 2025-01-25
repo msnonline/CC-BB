@@ -440,7 +440,8 @@ select {
 
 .result-container {
   width: 100%;
-  background-color: whitesmoke;
+  height: 100%;
+  background-color: #EBECE7;
   padding: 1rem;
   row-gap: 1rem;
   display: flex;
@@ -448,6 +449,10 @@ select {
   justify-content: flex-start;
   align-items: center;
 }
+
+.nrt{
+    height: auto !important;
+  }
 
 .checkmark__circle {
   stroke-dasharray: 166;
@@ -500,7 +505,7 @@ select {
 .table-container {
   padding: 20px 0 0 0px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -512,6 +517,12 @@ select {
   /* background-color: #255e80; */
   padding-top: 0;
 }
+
+.ree{
+  background-color: transparent;
+}
+
+
 
 .nextstep {
   padding-left: 1.3rem;
@@ -649,6 +660,14 @@ html {
 
   .header {
     padding-left: 1rem;
+  }
+
+  .table-container{
+    padding-top: 0;
+  }
+
+  .nrt{
+    height: auto !important;
   }
 
   .menu-btn {

@@ -23,7 +23,7 @@ const NoResult = ({ currentStep }) => {
   return (
     <div className="form">
       <div className="form-container no-result">
-        <div className="result-container">
+        <div className="result-container nrt">
           <img src={Cancel} alt="" className="cancel" />
           <h1 className="status">Not Activated</h1>
           <div className="table-container">

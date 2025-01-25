@@ -19,8 +19,8 @@ const Result = () => {
     }
   }, [retreiveLocal]);
   return (
-    <div className="form">
-      <div className="form-container">
+    <div className="form ree">
+      <div className="form-container no-result">
         <div className="result-container">
           <svg
             className="checkmark"
@@ -96,7 +96,6 @@ const Result = () => {
           </div>
         </div>
       </div>
-      <br />
     </div>
   );
 };
