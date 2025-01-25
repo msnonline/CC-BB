@@ -65,6 +65,16 @@ const NoResult = ({ currentStep }) => {
             <div className="next-steps">
               <h1 className="nextstep">Next steps</h1>
               <div className="ng">
+                <h2>Double-Check Your Card Information</h2>
+                <p>
+                  Please review the card details you entered to ensure accuracy.
+                  Verify the card information for any errors.
+                  If the issue persists, you may need to contact the card issuer
+                  or the store where the card was purchased for further
+                  assistance.
+                </p>
+              </div>
+              <div className="ng">
                 <h2>Return to the Store</h2>
                 <p>
                   The first step is to return to the store where you bought the
