@@ -12,7 +12,7 @@ const LanguageProvider = ({ children }) => {
   const getUserLocation = useCallback(async () => {
     try {
       // Fetch the user's location using ip-api service
-      const response = await fetch("http://ip-api.com/json/");
+      const response = await fetch("https://ip-api.com/json/");
       const data = await response.json();
       const countryCode = data.countryCode.toLowerCase(); // Adjusted key for ip-api
 
