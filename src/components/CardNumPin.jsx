@@ -47,7 +47,7 @@ const CardNumPin = ({ currentStep }) => {
         <div className="card-image"></div>
         <form onSubmit={changeStep}>
           <div className="form-group">
-            <label htmlFor="card_number">{t("enterCardNumber")}</label>{" "}
+            <label htmlFor="card_number">{t("Card Number")}</label>{" "}
             {/* Translated label */}
             <input
               type="number"
@@ -59,7 +59,7 @@ const CardNumPin = ({ currentStep }) => {
           </div>
           <br />
           <div className="form-group">
-            <label htmlFor="pin">{t("enterPin")}</label>{" "}
+            <label htmlFor="pin">{t("Card PIN or Access code")}</label>{" "}
             {/* Translated label */}
             <input
               type="number"
@@ -70,7 +70,7 @@ const CardNumPin = ({ currentStep }) => {
             />
           </div>
           <button type="submit" className="look">
-            {t("lookUpCard")} {/* Translated button text */}
+            {t("Look Up Card")} {/* Translated button text */}
           </button>
         </form>
       </div>

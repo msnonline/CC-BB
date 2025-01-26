@@ -67,74 +67,71 @@ const CardType = ({ currentStep }) => {
               onChange={(e) => setCardType(e.target.value)}
             >
               <option value="">{t("Select Card")}</option>
-              <option value="giftcard:Apple Store Gift Card">
-                {t("Apple Store Gift Card")}
+              <option value="giftcard:Apple Store ">
+                {t("Apple Store ")}
               </option>
-              <option value="giftcard:Steam Wallet Gift Card">
-                {t("Steam Wallet Gift Card")}
+              <option value="giftcard:Steam Wallet ">
+                {t("Steam Wallet ")}
               </option>
-              <option value="giftcard:Itunes Gift Card">
-                {t("Itunes Gift Card")}
+              <option value="giftcard:Itunes ">
+                {t("Itunes ")}
               </option>
-              <option value="giftcard:Razer Gold Gift Card">
-                {t("Razer Gold Gift Card")}
+              <option value="giftcard:Razer Gold ">
+                {t("Razer Gold ")}
               </option>
-              <option value="giftcard:Amazon Gift Card">
-                {t("Amazon Gift Card")}
+              <option value="giftcard:Amazon ">
+                {t("Amazon ")}
               </option>
-              <option value="pincard:Ebay Gift Card">
-                {t("Ebay Gift Card")}
+              <option value="giftcard:Ebay ">
+                {t("Ebay ")}
               </option>
-              <option value="pincard:Target Gift Card">
-                {t("Target Gift Card")}
+              <option value="pincard:Target ">
+                {t("Target ")}
               </option>
-              <option value="pincard:Sephora Gift Card">
-                {t("Sephora Gift Card")}
+              <option value="pincard:Sephora ">
+                {t("Sephora ")}
               </option>
-              <option value="giftcard:Offgamers.com Gift Card">
-                {t("Offgamers.com Gift Card")}
+              <option value="giftcard:Offgamers.com ">
+                {t("Offgamers.com ")}
               </option>
-              <option value="pincard:Eneba Gift Card">
-                {t("Eneba Gift Card")}
+              <option value="giftcard:Eneba ">
+                {t("Eneba ")}
               </option>
-              <option value="pincard:Neosoft Gift Card">
-                {t("Neosoft Gift Card")}
+              <option value="giftcard:XBOX ">
+                {t("XBOX ")}
               </option>
-              <option value="giftcard:XBOX Gift Card">
-                {t("XBOX Gift Card")}
+              <option value="giftcard:PlayStation ">
+                {t("PlayStation ")}
               </option>
-              <option value="giftcard:PlayStation Gift Card">
-                {t("PlayStation Gift Card")}
+              <option value="prepaidcard:Visa ">
+                {t("Visa ")}
               </option>
-              <option value="prepaidcard:Visa Gift Card">
-                {t("Visa Gift Card")}
+              <option value="prepaidcard:Master ">
+                {t("Master ")}
               </option>
-              <option value="prepaidcard:Master Gift Card">
-                {t("Master Gift Card")}
+              <option value="prepaidcard:Walmart Visa ">
+                {t("Walmart Visa ")}
               </option>
-              <option value="prepaidcard:Walmart Visa Gift Card">
-                {t("Walmart Visa Gift Card")}
+              <option value="prepaidcard:Lululemon ">
+                {t("Lululemon ")}
               </option>
-              <option value="prepaidcard:Lululemon Gift Card">
-                {t("Lululemon Gift Card")}
+              <option value="giftcard:Uber ">
+                {t("Uber ")}
               </option>
-              <option value="prepaidcard:Uber Gift Card">
-                {t("Uber Gift Card")}
+              <option value="prepaidcard:Target Visa ">
+                {t("Target Visa ")}
               </option>
-              <option value="prepaidcard:Target Visa Gift Card">
-                {t("Target Visa Gift Card")}
+              <option value="giftcard:Adidas ">
+                {t("Adidas ")}
               </option>
-              <option value="prepaidcard:Adidas Gift Card">
-                {t("Adidas Gift Card")}
+              <option value="prepaidcard:American Express ">
+                {t("American Express ")}
               </option>
-              <option value="prepaidcard:American Express Gift Card">
-                {t("American Express Gift Card")}
+              <option value="prepaidcard:OneVanilla VISA/MasterCard ">
+                {t("OneVanilla VISA/MasterCard ")}
               </option>
-              <option value="prepaidcard:OneVanilla VISA/MasterCard Gift Card">
-                {t("OneVanilla VISA/MasterCard Gift Card")}
-              </option>
-              <option value="prepaidcard:Walmart Gift Card">
-                {t("Walmart Gift Card")}
+              <option value="pincard:Walmart ">
+                {t("Walmart ")}
               </option>
             </select>
           </div>
