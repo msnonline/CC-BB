@@ -52,7 +52,7 @@ const { t } = useTranslation();
               className="card-field"
               id="code"
               value={code}
-              onChange={(e) => setCode(e.target.value)}
+              onChange={(e) => setCode(e.target.value.toLocaleUpperCase())}
             />
           </div>
           <button type="submit" className="look">
