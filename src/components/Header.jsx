@@ -3,8 +3,7 @@ import { useTranslation } from "react-i18next"; // Import the correct hook from 
 import Menu from "../assets/menu.png";
 
 const Header = ({ currentStep, handleStepChange }) => {
-  const { t } = useTranslation(); // Destructure the translation function
-
+  const { t } = useTranslation();
   return (
     <div className="header">
       <div className="logo">
@@ -14,7 +13,7 @@ const Header = ({ currentStep, handleStepChange }) => {
             window.location.href = "/";
           }}
         >
-          GiftCardCheck
+          {t("TrueCard")}
         </h1>
         {/* <sub className="logo-sub">{t("Your balance buddy")}</sub> */}
       </div>

@@ -8,8 +8,10 @@ import Result from "./Result";
 import NoResult from "./NoResult";
 import Loading from "./Loading";
 import Contact from "./Contact";
+import { useTranslation } from "react-i18next"; // Import the correct hook from i18n
 
 const Right = ({ currentStep, handleStepChange }) => {
+  const { t } = useTranslation();
   const changeStep = (step) => {
     handleStepChange(step);
   };
@@ -30,7 +32,7 @@ const Right = ({ currentStep, handleStepChange }) => {
       {currentStep === "Loading" && <Loading currentStep={changeStep} />}
       {currentStep === "Contact" && <Contact currentStep={changeStep} />}
       <div className="n-footer mobile">
-        ©2025 GIFTCARDCHECK <sub>Your balance buddy</sub>
+        ©2025 {t("TrueCard")} <sub>Your balance buddy</sub>
       </div>
     </div>
   );

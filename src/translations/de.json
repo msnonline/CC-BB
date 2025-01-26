@@ -68,6 +68,7 @@
   "OneVanilla VISA/MasterCard Gift Card": "OneVanilla VISA/MasterCard Geschenkkarte",
   "Walmart Gift Card": "Walmart Geschenkkarte",
   "Select Currency": "Währung auswählen",
+  "TrueCard": "WahreKarte",
   "USD ($)": "USD ($)",
   "CAD ($)": "CAD ($)",
   "AUD ($)": "AUD ($)",
@@ -84,5 +85,6 @@
   "Subject": "Betreff",
   "Message": "Nachricht",
   "Send Message": "Nachricht senden",
-  "An unexpected error occurred.": "Ein unerwarteter Fehler ist aufgetreten."
+  "An unexpected error occurred.": "Ein unerwarteter Fehler ist aufgetreten.",
+  "page_title": "WahreKarte | Dein Guthaben-Buddy"
 }
