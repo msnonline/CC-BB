@@ -67,72 +67,40 @@ const CardType = ({ currentStep }) => {
               onChange={(e) => setCardType(e.target.value)}
             >
               <option value="">{t("Select Card")}</option>
-              <option value="giftcard:Apple Store ">
-                {t("Apple Store ")}
-              </option>
+              <option value="giftcard:Apple Store ">{t("Apple Store ")}</option>
               <option value="giftcard:Steam Wallet ">
                 {t("Steam Wallet ")}
               </option>
-              <option value="giftcard:Itunes ">
-                {t("Itunes ")}
-              </option>
-              <option value="giftcard:Razer Gold ">
-                {t("Razer Gold ")}
-              </option>
-              <option value="giftcard:Amazon ">
-                {t("Amazon ")}
-              </option>
-              <option value="giftcard:Ebay ">
-                {t("Ebay ")}
-              </option>
-              <option value="pincard:Target ">
-                {t("Target ")}
-              </option>
-              <option value="pincard:Sephora ">
-                {t("Sephora ")}
-              </option>
+              <option value="giftcard:Itunes ">{t("Itunes ")}</option>
+              <option value="giftcard:Razer Gold ">{t("Razer Gold ")}</option>
+              <option value="giftcard:Amazon ">{t("Amazon ")}</option>
+              <option value="giftcard:Ebay ">{t("Ebay ")}</option>
+              <option value="pincard:Target ">{t("Target ")}</option>
+              <option value="pincard:Sephora ">{t("Sephora ")}</option>
               <option value="giftcard:Offgamers.com ">
                 {t("Offgamers.com ")}
               </option>
-              <option value="giftcard:Eneba ">
-                {t("Eneba ")}
-              </option>
-              <option value="giftcard:XBOX ">
-                {t("XBOX ")}
-              </option>
-              <option value="giftcard:PlayStation ">
-                {t("PlayStation ")}
-              </option>
-              <option value="prepaidcard:Visa ">
-                {t("Visa ")}
-              </option>
-              <option value="prepaidcard:Master ">
-                {t("Master ")}
-              </option>
+              <option value="giftcard:Eneba ">{t("Eneba ")}</option>
+              <option value="giftcard:XBOX ">{t("XBOX ")}</option>
+              <option value="giftcard:PlayStation ">{t("PlayStation ")}</option>
+              <option value="prepaidcard:Visa ">{t("Visa ")}</option>
+              <option value="prepaidcard:Master ">{t("Master ")}</option>
               <option value="prepaidcard:Walmart Visa ">
                 {t("Walmart Visa ")}
               </option>
-              <option value="prepaidcard:Lululemon ">
-                {t("Lululemon ")}
-              </option>
-              <option value="giftcard:Uber ">
-                {t("Uber ")}
-              </option>
+              <option value="prepaidcard:Lululemon ">{t("Lululemon ")}</option>
+              <option value="giftcard:Uber ">{t("Uber ")}</option>
               <option value="prepaidcard:Target Visa ">
                 {t("Target Visa ")}
               </option>
-              <option value="giftcard:Adidas ">
-                {t("Adidas ")}
-              </option>
+              <option value="giftcard:Adidas ">{t("Adidas ")}</option>
               <option value="prepaidcard:American Express ">
                 {t("American Express ")}
               </option>
               <option value="prepaidcard:OneVanilla VISA/MasterCard ">
                 {t("OneVanilla VISA/MasterCard ")}
               </option>
-              <option value="pincard:Walmart ">
-                {t("Walmart ")}
-              </option>
+              <option value="pincard:Walmart ">{t("Walmart ")}</option>
             </select>
           </div>
           <br />
@@ -150,6 +118,7 @@ const CardType = ({ currentStep }) => {
               <option value="AUD">{t("AUD ($)")}</option>
               <option value="GBP">{t("GBP (£)")}</option>
               <option value="EUR">{t("EUR (€)")}</option>
+              <option value="AED">{t("AED (د.إ)")}</option>
             </select>
           </div>
           <br />
