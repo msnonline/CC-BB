@@ -9,11 +9,11 @@
   font-weight: 400;
   font-family: "Poppins";
   scroll-behavior: smooth;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  font-synthesis: none !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -webkit-text-size-adjust: 100% !important;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -80,7 +80,8 @@ body {
   cursor: pointer;
 }
 
-.menu-btn:hover, .menu-btn:active {
+.menu-btn:hover,
+.menu-btn:active {
   background-color: #3484b3;
   color: #ffdd00;
 }
@@ -308,7 +309,9 @@ select {
 }
 
 input,
-select, textarea, .look{
+select,
+textarea,
+.look {
   border-radius: 4px !important;
 }
 
@@ -333,7 +336,9 @@ select, textarea, .look{
   position: relative; /* Relative positioning for custom arrow */
 }
 
-.custom-select:focus,input:focus,textarea:focus {
+.custom-select:focus,
+input:focus,
+textarea:focus {
   outline: none; /* Removes focus outline */
   border-color: #007bff; /* Border color on focus */
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow on focus */
@@ -430,12 +435,14 @@ select, textarea, .look{
   width: 100%;
   border: none;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
   font-size: 1.3rem;
   margin-top: 1rem;
 }
 
-.look:hover,.look:active {
+.look:hover,
+.look:active {
   background-color: #3484b3;
   color: #ffdd00;
 }
@@ -447,7 +454,7 @@ select, textarea, .look{
 .result-container {
   width: 100%;
   height: 100%;
-  background-color: #EBECE7;
+  background-color: #ebece7;
   padding: 1rem;
   row-gap: 1rem;
   display: flex;
@@ -456,9 +463,9 @@ select, textarea, .look{
   align-items: center;
 }
 
-.nrt{
-    height: auto !important;
-  }
+.nrt {
+  height: auto !important;
+}
 
 .checkmark__circle {
   stroke-dasharray: 166;
@@ -519,16 +526,19 @@ select, textarea, .look{
   height: auto;
 }
 
+table{
+   border-collapse: separate; /* Allows spacing between cells */
+  border-spacing: 10px; /* Space between cells */       
+}
+
 .no-result {
   /* background-color: #255e80; */
   padding-top: 0;
 }
 
-.ree{
+.ree {
   background-color: transparent;
 }
-
-
 
 .nextstep {
   padding-left: 1.3rem;
@@ -555,6 +565,7 @@ th,
 td {
   padding: 12px 20px;
   border: none;
+  vertical-align: top;
   color: #333;
 }
 
@@ -668,21 +679,21 @@ html {
   .header {
     padding-left: 1rem;
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
     z-index: 1;
   }
 
-  .table-container{
+  .table-container {
     padding-top: 0;
   }
 
-  .nrt{
+  .nrt {
     height: auto !important;
   }
 
   .menu-btn {
-    padding:0 1rem 0 0;
+    padding: 0 1rem 0 0;
     height: 2.7rem !important;
     width: 170px !important;
     justify-content: flex-end !important;
@@ -707,9 +718,9 @@ html {
     margin-top: 3rem;
   }
 
-    .left-top h2{
-      font-size: 2.2rem;
-    }
+  .left-top h2 {
+    font-size: 2.2rem;
+  }
 
   .ccname {
     padding: 0 !important;
@@ -746,14 +757,23 @@ html {
   }
 
   .tl {
-    padding: 0 !important;
+    padding: 0 0 1rem 0 !important;
     max-width: 100px;
     min-width: 100px;
+    line-break: auto;
+    word-wrap: break-word; /* Ensures long words break to fit the container */
+    word-break: break-word; /* Handles long unbreakable words */
+    overflow-wrap: break-word; /* Modern equivalent for word wrapping */
+    white-space: normal;
+    hyphens: auto !important;
   }
 
   .tr {
-    padding-right: 0;
+    padding: 0 0 0 1rem;
+    width: 100%;
   }
+
+
 
   .cancel {
     width: 60px;
@@ -938,6 +958,10 @@ html {
 .ng h2 {
   font-size: 1.3rem;
   color: #368a08;
+  background: linear-gradient(to right, #368a08, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;  
 }
 
 .next-steps {
