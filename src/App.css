@@ -314,7 +314,7 @@ input,
 select,
 textarea,
 .look {
-  border-radius: 4px !important;
+  border-radius: 0 !important;
 }
 
 .suc-head {
