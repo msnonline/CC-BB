@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next"; 
 
 
-const Result = () => {
+const Result = ({ currentStep }) => {
   const [lastFour, setLastFour] = useState("");
   const [retreiveLocal, setRetreiveLocal] = useState(null);
   const {t} = useTranslation();
