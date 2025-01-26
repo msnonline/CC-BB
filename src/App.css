@@ -660,6 +660,10 @@ html {
 
   .header {
     padding-left: 1rem;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1;
   }
 
   .table-container{
@@ -671,7 +675,10 @@ html {
   }
 
   .menu-btn {
-    padding-right: 0;
+    padding:0 1rem 0 0;
+    height: 2.7rem !important;
+    width: 170px !important;
+    justify-content: flex-end !important;
   }
 
   .layout {
@@ -690,6 +697,7 @@ html {
 
   .left-top {
     padding: 2rem 1rem;
+    margin-top: 3rem;
   }
 
   .ccname {
