@@ -18,8 +18,34 @@ const LanguageProvider = ({ children }) => {
       const data = await response.json();
       const countryCode = data.country.toLowerCase(); // Adjusted key for ipinfo
 
-      // Set the language based on country
-      const detectedLanguage = countryCode === "de" ? "de" : "en";
+      // Set the language based on country code
+      let detectedLanguage = "en"; // Default to English
+      switch (countryCode) {
+        case "de":
+          detectedLanguage = "de";
+          break;
+        case "nl":
+        case "be":
+          detectedLanguage = "nl";
+          break;
+        case "ae": // United Arab Emirates, assuming Arabic
+        case "sa": // Saudi Arabia
+        case "eg": // Egypt
+          detectedLanguage = "ar";
+          break;
+        case "it":
+          detectedLanguage = "it";
+          break;
+        case "fr":
+          detectedLanguage = "fr";
+          break;
+        case "es":
+          detectedLanguage = "es";
+          break;
+        default:
+          detectedLanguage = "en"; // Default to English if no match
+      }
+
       setLanguage(detectedLanguage);
       i18n.changeLanguage(detectedLanguage); // Update the i18n language
     } catch (error) {

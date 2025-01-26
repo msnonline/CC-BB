@@ -374,7 +374,8 @@ textarea:focus {
 } */
 
 #start {
-  width: 150px;
+  width: auto;
+  padding: 0 1rem 0 1rem;
 }
 
 .n-footer {
@@ -861,7 +862,8 @@ html {
   } */
 
   #start {
-    width: 130px;
+    width: auto;
+    padding: 0 1rem 0 1rem;
   }
 
   .form-container {
@@ -907,40 +909,6 @@ html {
   }
 }
 
-/* @media screen and (min-width: 761px) and (max-width: 1023px) {
-  body {
-    align-items: flex-start;
-    background-color: #255e80;
-  }
-
-  .left {
-    min-width: 50% !important;
-    width: 40% !important;
-  }
-  .form-itself {
-    padding: 0 !important;
-  }
-
-  .form-title {
-    margin: 0 1rem;
-    font-size: 1.3rem;
-  }
-
-  .Content {
-    padding: 1rem;
-    flex-direction: column;
-  }
-
-  .bt-btn-con {
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  #start {
-    width: 130px;
-  }
-} */
 
 .mobile {
   display: none;

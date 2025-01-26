@@ -58,7 +58,7 @@ const Left = ({ handleStepChange }) => {
         </button>
       </div>
       <div className="n-footer web">
-        ©2025 GIFTCARDCHECK <sub>{t("Your balance buddy")}</sub>
+        ©2025 {t("TrueCard")} <sub>{t("Your balance buddy")}</sub>
       </div>
     </div>
   );
