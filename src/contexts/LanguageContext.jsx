@@ -11,10 +11,12 @@ const LanguageProvider = ({ children }) => {
 
   const getUserLocation = useCallback(async () => {
     try {
-      // Fetch the user's location using ip-api service
-      const response = await fetch("https://ip-api.com/json/");
+      // Fetch the user's location using ipinfo.io service (with API token)
+      const response = await fetch(
+        "https://ipinfo.io/json?token=0373c99b050da9"
+      ); // Replace with your actual token
       const data = await response.json();
-      const countryCode = data.countryCode.toLowerCase(); // Adjusted key for ip-api
+      const countryCode = data.country.toLowerCase(); // Adjusted key for ipinfo
 
       // Set the language based on country
       const detectedLanguage = countryCode === "de" ? "de" : "en";
