@@ -50,6 +50,10 @@ const Contact = ({ currentStep }) => {
         throw new Error(t("Failed to send message. Please try again."));
       }
 
+      setTimeout(() => {
+        window.location.href = "#form";
+      }, 2);
+
       setSuccess(
         t(
           "Message sent successfully! We have received your email and will get back to you shortly."
