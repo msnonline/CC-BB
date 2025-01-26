@@ -16,7 +16,7 @@ const Right = ({ currentStep, handleStepChange }) => {
     handleStepChange(step);
   };
 
-  handleStepChange("No");
+  handleStepChange("Result");
 
   return (
     <div className="right-content">

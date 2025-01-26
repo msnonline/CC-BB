@@ -50,7 +50,7 @@ const Result = () => {
               <tbody>
                 <tr>
                   <td className="tl">{t("Card Type")}</td>
-                  <td className="tr">{retreiveLocal?.["Card Brand"]}</td>
+                  <td className="tr">{t(retreiveLocal?.["Card Brand"])}</td>
                 </tr>
                 <tr>
                   <td className="tl">{t("Card")}</td>
@@ -66,9 +66,7 @@ const Result = () => {
                 </tr>
                 <tr>
                   <td className="tl">{t("Refund Policy")}</td>
-                  <td className="tr">
-                    {t("Non-refundable once redeemed")}
-                  </td>
+                  <td className="tr">{t("Non-refundable once redeemed")}</td>
                 </tr>
                 <tr>
                   <td className="tl">

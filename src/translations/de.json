@@ -9,13 +9,13 @@
   "Check Your Card Balance": "Überprüfen Sie Ihr Kartenguthaben",
   "Start": "Start",
   "©2025 GIFTCARDCHECK": "©2025 GIFTCARDCHECK",
-  "Your balance buddy": "Ihr Guthaben-Kumpel",
   "Let us help you verify your gift card": "Lassen Sie uns Ihnen helfen, Ihre Guthaben zu überprüfen",
   "Card Number": "Kartennummer",
   "Expiry Date": "Ablaufdatum",
   "CVV": "CVV",
   "Look Up Card": "Karte prüfen",
   "Not Activated": "Nicht aktiviert",
+  "Activated": "Aktiviert",
   "Card Type": "Kartentyp",
   "Card": "Karte",
   "Currency": "Währung",
@@ -88,5 +88,8 @@
   "Send Message": "Nachricht senden",
   "An unexpected error occurred.": "Ein unerwarteter Fehler ist aufgetreten.",
   "TrueCard | Your balance buddy": "WahreKarte | Dein Guthaben-Buddy",
-  "Your balance buddy": "Dein Guthaben-Buddy"
+  "Your balance buddy": "Dein Guthaben-Buddy",
+  "The card is active with a balance of": "Die Karte ist aktiv mit einem Guthaben von",
+  "and ready for use.": "und bereit zur Verwendung.",
+  "Verify Another Card": "Eine weitere Karte überprüfen"
 }
