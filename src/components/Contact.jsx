@@ -9,6 +9,7 @@ const Contact = ({ currentStep }) => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [isSending, setIsSending] = useState(false); // State to track if the message is being sent
 
   const isValidEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -19,14 +20,17 @@ const Contact = ({ currentStep }) => {
     e.preventDefault();
     setError("");
     setSuccess("");
+    setIsSending(true); // Set sending state to true
 
     if (!name || !email || !subject || !message) {
       setError(t("All fields are required."));
+      setIsSending(false); // Reset sending state
       return;
     }
 
     if (!isValidEmail(email)) {
       setError(t("Please enter a valid email address."));
+      setIsSending(false); // Reset sending state
       return;
     }
 
@@ -57,6 +61,8 @@ const Contact = ({ currentStep }) => {
       setMessage("");
     } catch (err) {
       setError(err.message || t("An unexpected error occurred."));
+    } finally {
+      setIsSending(false); // Reset sending state after API response
     }
   };
 
@@ -114,8 +120,8 @@ const Contact = ({ currentStep }) => {
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          <button className="look" type="submit">
-            {t("Send Message")}
+          <button className="look" type="submit" disabled={isSending}>
+            {isSending ? t("Sending...") : t("Send Message")}
           </button>
         </form>
         <br />
