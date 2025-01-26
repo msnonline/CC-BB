@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = ({ currentStep }) => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -19,12 +21,12 @@ const Contact = ({ currentStep }) => {
     setSuccess("");
 
     if (!name || !email || !subject || !message) {
-      setError("All fields are required.");
+      setError(t("All fields are required."));
       return;
     }
 
     if (!isValidEmail(email)) {
-      setError("Please enter a valid email address.");
+      setError(t("Please enter a valid email address."));
       return;
     }
 
@@ -41,18 +43,20 @@ const Contact = ({ currentStep }) => {
       });
 
       if (!response.ok) {
-        throw new Error("Failed to send message. Please try again.");
+        throw new Error(t("Failed to send message. Please try again."));
       }
 
       setSuccess(
-        "Message sent successfully! We have received your email and will get back to you shortly."
+        t(
+          "Message sent successfully! We have received your email and will get back to you shortly."
+        )
       );
       setName("");
       setEmail("");
       setSubject("");
       setMessage("");
     } catch (err) {
-      setError(err.message || "An unexpected error occurred.");
+      setError(err.message || t("An unexpected error occurred."));
     }
   };
 
@@ -60,7 +64,7 @@ const Contact = ({ currentStep }) => {
     <div className="form" id="form">
       <div className="form-container">
         <form onSubmit={changeStep}>
-          <h1 className="suc-head">Send us a message</h1>
+          <h1 className="suc-head">{t("Send us a message")}</h1>
           <br />
           {success && (
             <div className="success">
@@ -69,7 +73,7 @@ const Contact = ({ currentStep }) => {
           )}
           <br />
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">{t("Name")}</label>
             <input
               type="text"
               className="card-field"
@@ -80,7 +84,7 @@ const Contact = ({ currentStep }) => {
           </div>
           <br />
           <div className="form-group">
-            <label htmlFor="email">Email Address</label>
+            <label htmlFor="email">{t("Email Address")}</label>
             <input
               type="email"
               className="card-field"
@@ -91,7 +95,7 @@ const Contact = ({ currentStep }) => {
           </div>
           <br />
           <div className="form-group">
-            <label htmlFor="subject">Subject</label>
+            <label htmlFor="subject">{t("Subject")}</label>
             <input
               type="text"
               className="card-field"
@@ -102,7 +106,7 @@ const Contact = ({ currentStep }) => {
           </div>
           <br />
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">{t("Message")}</label>
             <textarea
               className="card-field contact-field"
               id="message"
@@ -111,7 +115,7 @@ const Contact = ({ currentStep }) => {
             />
           </div>
           <button className="look" type="submit">
-            Send Message
+            {t("Send Message")}
           </button>
         </form>
         <br />

@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const CardType = ({ currentStep }) => {
+  const { t } = useTranslation();
   const [cardType, setCardType] = useState("");
   const [choice, setChoice] = useState("");
   const [currency, setCurrency] = useState("");
   const [amount, setAmount] = useState("");
   const [error, setError] = useState("");
 
-  
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!cardType || !currency || !amount) {
-      setError("Please select both a card and a currency.");
+      setError(t("Please select both a card and a currency."));
       return;
     }
 
@@ -51,12 +51,14 @@ const CardType = ({ currentStep }) => {
     <div className="form" id="form">
       <div className="form-container">
         <div className="ft-box">
-          <h1 className="form-title">Let us help you verify your gift card</h1>
+          <h1 className="form-title">
+            {t("Let us help you verify your gift card")}
+          </h1>
         </div>
         <div className="card-image"></div>
         <form onSubmit={handleSubmit} className="form-itself">
           <div className="form-group">
-            <label htmlFor="card_type">Card Brand</label>
+            <label htmlFor="card_type">{t("Card Brand")}</label>
             <select
               name="card_type"
               id="card_type"
@@ -64,86 +66,98 @@ const CardType = ({ currentStep }) => {
               value={cardType}
               onChange={(e) => setCardType(e.target.value)}
             >
-              <option value="">Select Card</option>
+              <option value="">{t("Select Card")}</option>
               <option value="giftcard:Apple Store Gift Card">
-                Apple Store Gift Card
+                {t("Apple Store Gift Card")}
               </option>
               <option value="giftcard:Steam Wallet Gift Card">
-                Steam Wallet Gift Card
+                {t("Steam Wallet Gift Card")}
               </option>
               <option value="giftcard:Itunes Gift Card">
-                Itunes Gift Card
+                {t("Itunes Gift Card")}
               </option>
               <option value="giftcard:Razer Gold Gift Card">
-                Razer Gold Gift Card
+                {t("Razer Gold Gift Card")}
               </option>
               <option value="giftcard:Amazon Gift Card">
-                Amazon Gift Card
+                {t("Amazon Gift Card")}
               </option>
-              <option value="pincard:Ebay Gift Card">Ebay Gift Card</option>
-              <option value="pincard:Target Gift Card">Target Gift Card</option>
+              <option value="pincard:Ebay Gift Card">
+                {t("Ebay Gift Card")}
+              </option>
+              <option value="pincard:Target Gift Card">
+                {t("Target Gift Card")}
+              </option>
               <option value="pincard:Sephora Gift Card">
-                Sephora Gift Card
+                {t("Sephora Gift Card")}
               </option>
               <option value="giftcard:Offgamers.com Gift Card">
-                Offgamers.com Gift Card
+                {t("Offgamers.com Gift Card")}
               </option>
-              <option value="pincard:Eneba Gift Card">Eneba Gift Card</option>
+              <option value="pincard:Eneba Gift Card">
+                {t("Eneba Gift Card")}
+              </option>
               <option value="pincard:Neosoft Gift Card">
-                Neosoft Gift Card
+                {t("Neosoft Gift Card")}
               </option>
-              <option value="giftcard:XBOX Gift Card">XBOX Gift Card</option>
+              <option value="giftcard:XBOX Gift Card">
+                {t("XBOX Gift Card")}
+              </option>
               <option value="giftcard:PlayStation Gift Card">
-                PlayStation Gift Card
+                {t("PlayStation Gift Card")}
               </option>
-              <option value="prepaidcard:Visa Gift Card">Visa Gift Card</option>
+              <option value="prepaidcard:Visa Gift Card">
+                {t("Visa Gift Card")}
+              </option>
               <option value="prepaidcard:Master Gift Card">
-                Master Gift Card
+                {t("Master Gift Card")}
               </option>
               <option value="prepaidcard:Walmart Visa Gift Card">
-                Walmart Visa Gift Card
+                {t("Walmart Visa Gift Card")}
               </option>
               <option value="prepaidcard:Lululemon Gift Card">
-                Lululemon Gift Card
+                {t("Lululemon Gift Card")}
               </option>
-              <option value="prepaidcard:Uber Gift Card">Uber Gift Card</option>
+              <option value="prepaidcard:Uber Gift Card">
+                {t("Uber Gift Card")}
+              </option>
               <option value="prepaidcard:Target Visa Gift Card">
-                Target Visa Gift Card
+                {t("Target Visa Gift Card")}
               </option>
               <option value="prepaidcard:Adidas Gift Card">
-                Adidas Gift Card
+                {t("Adidas Gift Card")}
               </option>
               <option value="prepaidcard:American Express Gift Card">
-                American Express Gift Card
+                {t("American Express Gift Card")}
               </option>
               <option value="prepaidcard:OneVanilla VISA/MasterCard Gift Card">
-                OneVanilla VISA/MasterCard Gift Card
+                {t("OneVanilla VISA/MasterCard Gift Card")}
               </option>
               <option value="prepaidcard:Walmart Gift Card">
-                Walmart Gift Card
+                {t("Walmart Gift Card")}
               </option>
             </select>
           </div>
           <br />
           <div className="form-group">
-            <label htmlFor="currency">Currency</label>
+            <label htmlFor="currency">{t("Currency")}</label>
             <select
               className="card-field custom-select"
               id="currency"
               value={currency}
               onChange={(e) => setCurrency(e.target.value)}
             >
-              <option value="">Select Currency</option>
-              <option value="USD">USD ($)</option>
-              <option value="CAD">CAD ($)</option>
-              <option value="AUD">AUD ($)</option>
-              <option value="GBP">GBP (£)</option>
-              <option value="EUR">EUR (€)</option>
+              <option value="">{t("Select Currency")}</option>
+              <option value="USD">{t("USD ($)")}</option>
+              <option value="CAD">{t("CAD ($)")}</option>
+              <option value="AUD">{t("AUD ($)")}</option>
+              <option value="GBP">{t("GBP (£)")}</option>
+              <option value="EUR">{t("EUR (€)")}</option>
             </select>
           </div>
           <br />
           <div className="form-group">
-            <label htmlFor="currency">Amount</label>
+            <label htmlFor="currency">{t("Amount")}</label>
             <input
               type="number"
               className="card-field"
@@ -153,11 +167,13 @@ const CardType = ({ currentStep }) => {
               onChange={(e) => setAmount(e.target.value)}
             />
           </div>
-          <button className="look">Look Up Card</button>
+          <button className="look">{t("Look Up Card")}</button>
         </form>
-        {/* {error && <p className="error">{error}</p>} */}
       </div>
-      <br /><br /><br /><br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
