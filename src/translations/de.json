@@ -86,6 +86,7 @@
   "Message": "Nachricht",
   "Send Message": "Nachricht senden",
   "An unexpected error occurred.": "Ein unerwarteter Fehler ist aufgetreten.",
-  "TrueCard | Your balance buddy":"WahreKarte | Dein Guthaben-Buddy"
+  "TrueCard | Your balance buddy":"WahreKarte | Dein Guthaben-Buddy",
+  "Your balance buddy":"Dein Guthaben-Buddy"
   
 }
