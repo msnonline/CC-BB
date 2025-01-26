@@ -6,7 +6,7 @@ const TitleUpdater = () => {
 
   useEffect(() => {
     // Dynamically update the title when the language changes
-    document.title = t("page_title");
+    document.title = t("TrueCard | Your balance buddy");
   }, [t]); // Dependency on the translation function, so title updates when language changes
 
   return null; // This component doesn't render anything, just updates the title
