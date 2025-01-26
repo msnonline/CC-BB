@@ -416,6 +416,7 @@ textarea:focus {
 
 .exp-cvv {
   display: flex;
+  column-gap: 1rem;
 }
 
 .form-group {
@@ -446,10 +447,6 @@ textarea:focus {
 .look:active {
   background-color: #3484b3;
   color: #ffdd00;
-}
-
-.exp {
-  border-right: 0px;
 }
 
 .result-container {

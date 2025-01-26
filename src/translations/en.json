@@ -70,8 +70,9 @@
   "AUD ($)": "AUD ($)",
   "GBP (£)": "GBP (£)",
   "EUR (€)": "EUR (€)",
-  "TrueCard":"TrueCard",
+  "TrueCard": "TrueCard",
   "Please select both a card and a currency.": "Please select both a card and a currency.",
   "PIN": "PIN",
-  "Please enter both the card number and PIN.": "Please enter both the card number and PIN."
+  "Please enter both the card number and PIN.": "Please enter both the card number and PIN.",
+  "Check your card": "Check you card"
 }

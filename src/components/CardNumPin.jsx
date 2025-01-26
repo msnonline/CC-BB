@@ -41,7 +41,7 @@ const CardNumPin = ({ currentStep }) => {
     <div className="form" id="form">
       <div className="form-container">
         <div className="ft-box">
-          <h1 className="form-title">{t("formTitle")}</h1>{" "}
+          <h1 className="form-title">{t("Check your card")}</h1>{" "}
           {/* Translated title */}
         </div>
         <div className="card-image"></div>

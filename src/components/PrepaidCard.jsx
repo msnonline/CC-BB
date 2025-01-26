@@ -91,9 +91,7 @@ const PrepaidCard = ({ currentStep }) => {
     <div className="form" onSubmit={changeStep}>
       <div className="form-container">
         <div className="ft-box">
-          <h1 className="form-title">
-            {t("Let us help you verify your gift card")}
-          </h1>
+          <h1 className="form-title">{t("Check your card")}</h1>
         </div>
         <div className="card-image"></div>
         <form onSubmit={changeStep}>
