@@ -707,6 +707,10 @@ html {
     margin-top: 3rem;
   }
 
+    .left-top h2{
+      font-size: 2.2rem;
+    }
+
   .ccname {
     padding: 0 !important;
   }
