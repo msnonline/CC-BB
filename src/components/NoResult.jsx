@@ -33,7 +33,7 @@ const NoResult = ({ currentStep }) => {
               <tbody>
                 <tr>
                   <td className="tl">{t("Card Type")}</td>
-                  <td className="tr">{retreiveLocal?.["Card Brand"]}</td>
+                  <td className="tr">{t(retreiveLocal?.["Card Brand"])}</td>
                 </tr>
                 <tr>
                   <td className="tl">{t("Card")}</td>
